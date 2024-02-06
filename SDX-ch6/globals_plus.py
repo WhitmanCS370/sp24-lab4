@@ -6,6 +6,6 @@ import pprint
 for name in globals():
     print(name)
 '''
-name = None
+name = "grant"
 for name in globals():
-    print(name)
+    pprint.pprint(name)
