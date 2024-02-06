@@ -33,11 +33,9 @@ def test_sign_error():
     assert sgn(1) == 1
 
 # [run]
-def run_tests():
+def run_tests(test_list):
     results = {"pass": [], "fail": [], "error": []}
-    for (name, test) in globals().items():
-        if not name.startswith("test_"):
-            continue
+    for (name, test) in test_list.items():
         try:
             test()
             results["pass"].append(name)
@@ -51,6 +49,20 @@ def run_tests():
     return results
 # [/run]
 
+def setup():
+    # creeate list of functions
+    tests = {}
+    for(name, test) in globals().items():
+        if not name.startswith("test_"):
+            continue
+        else:
+            tests[name] = test
+    print(tests)
+    return tests
 
-run_tests()
-unittest.main()
+def teardown():
+    pass
+
+test_list = setup()
+run_tests(test_list)
+# unittest.main()
