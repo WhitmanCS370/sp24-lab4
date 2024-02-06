@@ -40,3 +40,5 @@ Write a short description of what you did for Part A below. Some questions you m
 ### Part B: Exercises from the end of SDX Ch. 6
 
 Write a short summary of what you did below, with answers to the questions embedded in the exercises.
+
+we were only able to add how fast the test ran we used this using (run)
