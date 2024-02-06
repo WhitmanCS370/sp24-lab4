@@ -7,7 +7,7 @@ Organization:
 * SDX-ch6: The code files for the _SDX Ch.6_ activity (as downloaded directly from the book website, unmodified) 
 
 ## Team Members for Part 1
-Enter your names here
+Luke Samuels, Zurain Zeeshan
 
 ## Team Roles for Part 1
 Who will start out as

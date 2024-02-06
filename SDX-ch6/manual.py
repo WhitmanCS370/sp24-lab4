@@ -2,6 +2,8 @@
 def sign(value):
     if value < 0:
         return -1
+    elif value == 0:
+        return 0
     else:
         return 1
 # [/sign]
@@ -36,13 +38,13 @@ def run_tests(all_tests):
     print(f"error {results['error']}")
 # [/run]
 
-# [use]
-TESTS = [
-    test_sign_negative,
-    test_sign_positive,
-    test_sign_zero,
-    test_sign_error
-]
+# # [use]
+# TESTS = [
+#     test_sign_negative,
+#     test_sign_positive,
+#     test_sign_zero,
+#     test_sign_error
+# ]
 
-run_tests(TESTS)
-# [/use]
+# run_tests(TESTS)
+# # [/use]
