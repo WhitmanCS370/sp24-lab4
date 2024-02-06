@@ -1,3 +1,19 @@
+import unittest
+
+class Sign_Test(unittest.TestCase):
+    def test_negative(self):
+        self.assertEqual(-1, sign(-3))
+
+    def test_positive(self):
+        self.assertEqual(1, sign(19))
+
+    def test_zero(self):
+        self.assertEqual(1, sign(0))
+
+    def test_error(self):
+        with self.assertRaises(NameError):
+            sgn(1)
+
 def sign(value):
     if value < 0:
         return -1
@@ -34,4 +50,4 @@ def run_tests():
     print(f"error {results['error']}")
 # [/run]
 
-run_tests()
+unittest.main()
