@@ -44,3 +44,7 @@ I have no idea what pytest actually does. It just seemed to give better error me
 ### Part B: Exercises from the end of SDX Ch. 6
 
 Write a short summary of what you did below, with answers to the questions embedded in the exercises.
+Exercise 1: 
+    "for name in globals(): print name " threw an error because we were attempting to initialize a new varible "name" after accessing globals. The same code works just fine in a main() function.
+
+Exercise 2:
