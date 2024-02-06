@@ -9,11 +9,12 @@ Organization:
 ## Team Members for Part 1
 Andrew Tate
 Jack Allard
+Steven Lin
 
 ## Team Roles for Part 1
 Who will start out as
 * DRIVER: Andrew
-* NAVIGATOR: Jack
+* NAVIGATOR: Jack, Steven
 
 You will switch halfway through the _SDX Ch. 3_ activity.
 
