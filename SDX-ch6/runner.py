@@ -19,21 +19,21 @@ class TestCase(unittest.TestCase):
         print(self.currentTime - self.startTime)
 
     def test_sign_negative(self):
-        self.currentTime = time.time()
         self.assertEqual(-1,sign(-3))
+        self.currentTime = time.time()
 
     def test_sign_positive(self):
-        self.currentTime = time.time()
         self.assertEqual(1,sign(19))
+        self.currentTime = time.time()
 
     def test_sign_zero(self):
-        self.currentTime = time.time()
         self.assertTrue(1,sign(0))
+        self.currentTime = time.time()
 
     def test_sign_error(self):
-        self.currentTime = time.time()
         with self.assertRaises(AssertionError):
             self.assertFalse(1,sign(1))
+        self.currentTime = time.time()
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
