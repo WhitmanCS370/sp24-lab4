@@ -19,8 +19,6 @@ def teardown():
 
 
 class TestClass(unittest.TestCase):
-
-    
     timeStarted = time.time()
     #print(timeStarted)
     setupFlag = False
@@ -51,20 +49,26 @@ class TestClass(unittest.TestCase):
         self.stopTimeRecord()
 	
     def test_sign_positive(self):
+        self.recordTimeStarted()
         self.classSetUp()
         self.assertTrue(sign(19) == 1)
         self.classTearDown()
+        self.stopTimeRecord()
 	
     def test_sign_zero(self):
+        self.recordTimeStarted()
         self.classSetUp()
         self.assertTrue(sign(0) == 0)
         self.classTearDown()
+        self.stopTimeRecord()
         
     
     def test_sign_error(self):
+        self.recordTimeStarted()
         self.classSetUp()
         self.assertTrue(sign(1) == 1)
         self.classTearDown()
+        self.stopTimeRecord()
         
     def test_sign_outliers(self):
         with self.assertRaises(TypeError):
