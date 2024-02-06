@@ -28,10 +28,14 @@ Write your answers to the questions below.
 ### Part A: Recreate the tests from SDX Ch. 6 in the unittest framework
 
 Write a short description of what you did for Part A below. Some questions you might answer: 
-* What was your experience putting the tests in unittest like? 
-* How is this different from Greg Wilson's simple implementation? 
-* How is it similar? 
+* What was your experience putting the tests in unittest like?
+* it was good, it was easy writing the tests by themselves, we struggled writing a function that would testv all the tests.
+* How is this different from Greg Wilson's simple implementation?
+* you have to use the built in modules from unittest, and we dont need a dictionary 
+* How is it similar?
+* they are siumilar because we still have to define each test and have a function for all the test
 * Why might you use pytest over unittest, or vice versa?
+* unittest doesnt have extra modules that we need to instal, pytest has more aplication. 
 
 ### Part B: Exercises from the end of SDX Ch. 6
 
