@@ -7,12 +7,12 @@ Organization:
 * SDX-ch6: The code files for the _SDX Ch.6_ activity (as downloaded directly from the book website, unmodified) 
 
 ## Team Members for Part 1
-Enter your names here
+Marlyn, Aiden
 
 ## Team Roles for Part 1
 Who will start out as
-* DRIVER: Driver's name
-* NAVIGATOR: Navigator's name
+* DRIVER: Marlyn
+* NAVIGATOR: Aiden
 
 You will switch halfway through the _SDX Ch. 3_ activity.
 
@@ -21,7 +21,9 @@ You will switch halfway through the _SDX Ch. 3_ activity.
 Write your answers to the questions below.
 
 * What were the main ideas from SDX chapter 6?
+* All about testing, and different ways to write test. Pass, fail error. Assertation 
 * What questions did you have about the material in the chapters? What did you find confusing?
+* introspection? A bit confused on pprinting module
 
 ### Part A: Recreate the tests from SDX Ch. 6 in the unittest framework
 
