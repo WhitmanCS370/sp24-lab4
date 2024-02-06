@@ -1,12 +1,21 @@
 import unittest
-import pprint
 
 from sign_func import sign
 # unittest must import what we want to test, can't be in the same file (like pytest).
 
 # pytest has boolean stuff, unittest is one function/method, more concise.
 
+
 class TestCase(unittest.TestCase):
+
+    def setUp(self):
+        # we don't really have anything to set up
+        print("setUp called!")
+
+    def tearDown(self):
+        # we also don't have anything to tear down
+        print("tearDown called!")
+
     def test_sign_negative(self):
         self.assertEqual(-1,sign(-3))
 
