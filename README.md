@@ -40,5 +40,9 @@ Write a short description of what you did for Part A below. Some questions you m
 We thought that the experience of using the unittest framework was pretty seamless. One thing that confused us was how to get the test methods to run, but we figured it out pretty quickly (the __main__ test runner needed to be un-indented.) One difference from Wilson's test implementation is that calling unittest.main() runs all the tests in a given test class, while his testing system iterates over all the tests manually via a run_tests method.
 
 ### Part B: Exercises from the end of SDX Ch. 6
+We get an error from running the loop without setting name to None, saying that the dictionary size changes.
+Otherwise we get a list of stuff that is accesible at the given level the loop was ran.
 
 Write a short summary of what you did below, with answers to the questions embedded in the exercises.
+
+We added the same tests that were in the chapter, along with an additional test to make sure the user wasn't putting in any funky string values. If a string was passed and the function didn't raise an error, it would tell the test class that something was wrong. This took a little while to figure out. 
