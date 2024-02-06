@@ -7,12 +7,13 @@ Organization:
 * SDX-ch6: The code files for the _SDX Ch.6_ activity (as downloaded directly from the book website, unmodified) 
 
 ## Team Members for Part 1
-Enter your names here
+Andrew Tate
+Jack Allard
 
 ## Team Roles for Part 1
 Who will start out as
-* DRIVER: Driver's name
-* NAVIGATOR: Navigator's name
+* DRIVER: Andrew
+* NAVIGATOR: Jack
 
 You will switch halfway through the _SDX Ch. 3_ activity.
 
