@@ -1,21 +1,45 @@
-def sign(value):
-    if value < 0:
-        return -1
-    else:
-        return 1
+import unittest
+import time
 
-def test_sign_negative():
-    assert sign(-3) == -1
+from sign_func import sign
+# unittest must import what we want to test, can't be in the same file (like pytest).
 
-def test_sign_positive():
-    assert sign(19) == 1
+# pytest has boolean stuff, unittest is one function/method, more concise.
 
-def test_sign_zero():
-    assert sign(0) == 0
+class TestCase(unittest.TestCase):
 
-def test_sign_error():
-    assert sgn(1) == 1
+    def setUp(self):
+        self.startTime = time.time()
+        self.currentTime = time.time()
+        # we don't really have anything to set up
+        print("setUp called!")
 
+    def tearDown(self):
+        # we also don't have anything to tear down
+        print(self.currentTime - self.startTime)
+
+    def test_sign_negative(self):
+        self.assertEqual(-1,sign(-3))
+        self.currentTime = time.time()
+
+    def test_sign_positive(self):
+        self.assertEqual(1,sign(19))
+        self.currentTime = time.time()
+
+    def test_sign_zero(self):
+        self.assertTrue(1,sign(0))
+        self.currentTime = time.time()
+
+    def test_sign_error(self):
+        with self.assertRaises(AssertionError):
+            self.assertFalse(1,sign(1))
+        self.currentTime = time.time()
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
+
+
+'''
 # [run]
 def run_tests():
     results = {"pass": 0, "fail": 0, "error": 0}
@@ -23,7 +47,7 @@ def run_tests():
         if not name.startswith("test_"):
             continue
         try:
-            test()
+            TestCase()
             results["pass"] += 1
         except AssertionError:
             results["fail"] += 1
@@ -35,3 +59,4 @@ def run_tests():
 # [/run]
 
 run_tests()
+'''

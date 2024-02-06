@@ -5,7 +5,9 @@ import pprint
 '''
 for name in globals():
     print(name)
+    # RuntimeError: dictionary changed size during iteration
 '''
 name = None
 for name in globals():
     print(name)
+    # it works
