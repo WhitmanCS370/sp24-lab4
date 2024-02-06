@@ -11,8 +11,8 @@ Enter your names here
 
 ## Team Roles for Part 1
 Who will start out as
-* DRIVER: Driver's name
-* NAVIGATOR: Navigator's name
+* DRIVER: Coden
+* NAVIGATOR: Molly
 
 You will switch halfway through the _SDX Ch. 3_ activity.
 
@@ -21,7 +21,9 @@ You will switch halfway through the _SDX Ch. 3_ activity.
 Write your answers to the questions below.
 
 * What were the main ideas from SDX chapter 6?
+  Testing, how it works and different types of tests. There's different ways to do them and some are better for others depending on the scenario.
 * What questions did you have about the material in the chapters? What did you find confusing?
+  For assertRaises in unittest, are we expected to know and use all of the different types of errors in order to use it?
 
 ### Part A: Recreate the tests from SDX Ch. 6 in the unittest framework
 
