@@ -1,23 +1,28 @@
-def sign(value):
-    if value < 0:
-        return -1
-    else:
-        return 1
+import unittest
 
-def test_sign_negative():
-    assert sign(-3) == -1
+from sign_func import sign
 
-def test_sign_positive():
-    assert sign(19) == 1
+    
+class TestCade(unittest.TestCase):
+    def test_sign_negative(self):
+        self.assertEqual(-1,sign(-3))
 
-def test_sign_zero():
-    assert sign(0) == 0
+    def test_sign_positive(self):
+        self.assertEqual(1,sign(19))
 
-def test_sign_error():
-    assert sgn(1) == 1
+    def test_sign_zero(self):
+        self.assertEqual(1,sign(0))
+
+    def test_sign_error(self):
+        self.assertFalse(1,sign(1))
+
+if __name__ == '__main__':
+    unittest.main()
+
 
 # [run]
-def run_tests():
+    '''
+        def run_tests():
     results = {"pass": 0, "fail": 0, "error": 0}
     for (name, test) in globals().items():
         if not name.startswith("test_"):
@@ -35,3 +40,4 @@ def run_tests():
 # [/run]
 
 run_tests()
+'''
