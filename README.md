@@ -35,7 +35,7 @@ Write a short description of what you did for Part A below. Some questions you m
 * How is it similar?
 * they are siumilar because we still have to define each test and have a function for all the test
 * Why might you use pytest over unittest, or vice versa?
-* unittest doesnt have extra modules that we need to instal, pytest has more aplication. 
+* unittest doesnt have extra modules that we need to instal, pytest has more aplication.
 
 ### Part B: Exercises from the end of SDX Ch. 6
 
