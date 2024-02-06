@@ -37,6 +37,8 @@ Write a short description of what you did for Part A below. Some questions you m
 * How is it similar? 
 * Why might you use pytest over unittest, or vice versa?
 
+We thought that the experience of using the unittest framework was pretty seamless. One thing that confused us was how to get the test methods to run, but we figured it out pretty quickly (the __main__ test runner needed to be un-indented.) One difference from Wilson's test implementation is that calling unittest.main() runs all the tests in a given test class, while his testing system iterates over all the tests manually via a run_tests method.
+
 ### Part B: Exercises from the end of SDX Ch. 6
 
 Write a short summary of what you did below, with answers to the questions embedded in the exercises.
