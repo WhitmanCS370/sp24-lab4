@@ -48,3 +48,7 @@ Exercise 1:
     "for name in globals(): print name " threw an error because we were attempting to initialize a new varible "name" after accessing globals. The same code works just fine in a main() function.
 
 Exercise 2:
+    We successfully got runner.py's failing and erroring tests to output correctly. However we were not able to unit test this functionality.
+
+Exercise 3:
+    We used time.time to get the start and end time of the test runner and then outputted it with the results.
