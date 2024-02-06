@@ -1,3 +1,5 @@
+import unittest
+
 # [sign]
 def sign(value):
     if value < 0:
@@ -12,13 +14,26 @@ def test_sign_negative():
 
 def test_sign_positive():
     assert sign(19) == 1
-
+ 
 def test_sign_zero():
     assert sign(0) == 0
 
 def test_sign_error():
     assert sgn(1) == 1
 # [/tests]
+    
+class TestManual(unittest.TestCase):
+    def test_sign_negative(self):
+        self.assertTrue(sign(-3))
+    def test_sign_positive(self):
+        self.assertTrue(sign(19))
+    def test_sign_zero(self):
+        self.assertTrue(sign(0))
+    def test_sign_error(self):
+        self.assertTrue(sgn(1))
+
+if __name__ == '__main__':
+    unittest.main()
 
 # [run]
 def run_tests(all_tests):
