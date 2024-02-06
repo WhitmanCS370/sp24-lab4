@@ -22,7 +22,12 @@ You will switch halfway through the _SDX Ch. 3_ activity.
 Write your answers to the questions below.
 
 * What were the main ideas from SDX chapter 6?
+  
+  The normal ways of testing using defined testing functions is usually inefficient, the chapter discussed clever, alternative      ways of testing.
+  
 * What questions did you have about the material in the chapters? What did you find confusing?
+
+  We found the finding functions bit really confusing, we've never encountered that syntax.
 
 ### Part A: Recreate the tests from SDX Ch. 6 in the unittest framework
 
