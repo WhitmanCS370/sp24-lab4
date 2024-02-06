@@ -1,4 +1,5 @@
 import unittest
+import time
 
 def sign(value):
     if value < 0:
@@ -18,7 +19,10 @@ def teardown():
 
 
 class TestClass(unittest.TestCase):
+
     
+    timeStarted = time.time()
+    #print(timeStarted)
     setupFlag = False
     if ("setup" in globals()) and ("teardown" in globals()):
         setupFlag = True
@@ -30,12 +34,21 @@ class TestClass(unittest.TestCase):
     def classTearDown(self):
         if self.setupFlag:
             eval("teardown()")
-        
+    
+    def recordTimeStarted(self):
+        self.timeStarted = time.time()
+
+    def stopTimeRecord(self):
+        print("This took ")
+        temp = time.time()
+        print(temp - self.timeStarted)
         
     def test_sign_negative(self):
+        self.recordTimeStarted()
         self.classSetUp()
         self.assertTrue(sign(-3) == -1)
         self.classTearDown()
+        self.stopTimeRecord()
 	
     def test_sign_positive(self):
         self.classSetUp()
