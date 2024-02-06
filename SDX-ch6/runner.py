@@ -34,20 +34,23 @@ def test_sign_error():
 
 # [run]
 def run_tests():
-    results = {"pass": 0, "fail": 0, "error": 0}
+    results = {"pass": [], "fail": [], "error": []}
     for (name, test) in globals().items():
         if not name.startswith("test_"):
             continue
         try:
             test()
-            results["pass"] += 1
+            results["pass"].append(name)
         except AssertionError:
-            results["fail"] += 1
+            results["fail"].append(name)
         except Exception:
-            results["error"] += 1
+            results["error"].append(name)
     print(f"pass {results['pass']}")
     print(f"fail {results['fail']}")
     print(f"error {results['error']}")
+    return results
 # [/run]
 
+
+run_tests()
 unittest.main()
