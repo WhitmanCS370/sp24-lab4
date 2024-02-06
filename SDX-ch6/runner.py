@@ -12,11 +12,10 @@ class TestCase(unittest.TestCase):
         self.startTime = time.time()
         self.currentTime = time.time()
         # we don't really have anything to set up
-        print("setUp called! " + str(self.startTime))
+        print("setUp called! ")
 
     def tearDown(self):
         # we also don't have anything to tear down
-        print(self.currentTime)
         print(self.currentTime - self.startTime)
 
     def test_sign_negative(self):
