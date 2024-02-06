@@ -1,6 +1,9 @@
 import unittest
 
 from sign_func import sign
+# unittest must import what we want to test, can't be in the same file (like pytest).
+
+# pytest has boolean stuff, unittest is one function/method, more concise.
 
     
 class TestCade(unittest.TestCase):

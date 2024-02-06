@@ -29,9 +29,14 @@ Write your answers to the questions below.
 
 Write a short description of what you did for Part A below. Some questions you might answer: 
 * What was your experience putting the tests in unittest like? 
+  Trial and error, referencing official documentation that was provided. Some errors/issues weren't clear but we figured it out.
 * How is this different from Greg Wilson's simple implementation? 
+  unittest must import what we want to test, can't be in the same file (like pytest).
 * How is it similar? 
+  it asserts. Each one runs the function we're testing and gives a value that it should be compared to.
 * Why might you use pytest over unittest, or vice versa?
+  unittest seems more helpful for bigger projects cuz you can probably run tests on multiple functions in one testing doc. pytest
+  is probably more reasonable if you want to test just one function or have a smaller project.
 
 ### Part B: Exercises from the end of SDX Ch. 6
 
