@@ -12,7 +12,7 @@ class TestCase(unittest.TestCase):
         self.startTime = time.time()
         self.currentTime = time.time()
         # we don't really have anything to set up
-        print("setUp called! ")
+        print("setUp called!")
 
     def tearDown(self):
         # we also don't have anything to tear down
