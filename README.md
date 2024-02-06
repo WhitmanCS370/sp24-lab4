@@ -43,4 +43,4 @@ Write a short description of what you did for Part A below. Some questions you m
 Write a short summary of what you did below, with answers to the questions embedded in the exercises.
     exercise 1: First function gave RuntimeError cuz the dictionary changed size, the second function worked and printed the names of 
                 all globals. The second one initializes name before it begins iterating while the first one doesn't. It could maybe cause issues if name wasn't actually empty to start with.
-    
+    we started on exercise 4, didn't finish 5.
